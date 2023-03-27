@@ -8,3 +8,19 @@ function alertUser(){
 buttonRef.addEventListener('click', alertUser, {once:true});
 
 
+function changeBGPink(){
+    document.body.style.backgroundColor = "pink";
+
+}
+buttonRef.addEventListener('click',changeBGPink)
+
+function changeText(){
+    if(buttonRef.innerHTML === 'Click me'){
+        buttonRef.innerHTML = 'Clicked!';
+    }else{
+        buttonRef.innerHTML = 'Click me';
+    }
+    
+}
+
+buttonRef.addEventListener('click',changeText)
